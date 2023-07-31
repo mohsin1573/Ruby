@@ -5,11 +5,16 @@ class Person
     @name=name
     @age=age
   end
-  
-  def introduce
-    puts "Hi, my name is #{@name} and I am #{@age} years old."
+
+  def is_teenage
+    if @age <= 19
+      puts "Teen Ager"
+    end
+      puts "Not Teenage"
   end
 end
+  
 
 person1 = Person.new("John", 25)
-person1.introduce
+puts person1.name
+puts person1.is_teenage
